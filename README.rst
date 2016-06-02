@@ -20,7 +20,7 @@ We've created an "easy button" for Ubuntu, Centos, RHEL and openSuSe.
    which will be installed.
 
    b. -t option allows to specify tag in Tempest repository which will be installed.
-   For example: execute ./setup_env -t tags/3 to install Tempest tag-3.
+   For example: execute ``./setup_env -t tags/3`` to install Tempest tag-3.
 
    c. By default, Tempest will be installed from commit
    8d468c8332b1d0d7176c285de4cedfa589a54a23 (May 7, 2016).
@@ -57,9 +57,10 @@ We've created an "easy button" for Ubuntu, Centos, RHEL and openSuSe.
 
    ``./refstack-client test -c <Path of the tempest configuration file to use> -v --test-list <Path or URL of test list>``
 
-   For example:
+   For example::
 
-   ``./refstack-client test -c ~/tempest.conf -v --test-list "https://refstack.openstack.org/api/v1/guidelines/2016.01/tests?target=platform&type=required&alias=true&flag=false"``
+    ./refstack-client test -c ~/tempest.conf -v --test-list \
+    "https://refstack.openstack.org/api/v1/guidelines/2016.01/tests?target=platform&type=required&alias=true&flag=false"
 
    This will run only the test cases required by the 2016.01 guidelines
    that have not been flagged.
